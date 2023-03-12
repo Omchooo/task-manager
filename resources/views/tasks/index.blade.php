@@ -45,12 +45,12 @@
                                         </td>
                                         <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                             <a href="{{ route('tasks.edit', compact('task')) }}"
-                                                class="btn btn-primary edit-task">Edit</a>
+                                                class="rounded-md bg-blue-500 px-2 text-center text-base font-semibold text-white outline-none">Edit</a>
                                             <form action="{{ route('tasks.destroy', compact('task')) }}" method="POST"
                                                 class=" hover:cursor-pointer">
                                                 @method('DELETE')
                                                 @csrf
-                                                <button type="submit" class="btn btn-danger delete-task">Delete</button>
+                                                <button type="submit" class="rounded-md bg-red-600 px-2 text-center text-base font-semibold text-white outline-none">Delete</button>
                                             </form>
                                         </td>
                                     </tr>
